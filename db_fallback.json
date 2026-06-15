@@ -1,0 +1,462 @@
+{
+  "users": [
+    {
+      "username": "Goldy13 ",
+      "email": "basantimohanty45@gmail.com",
+      "password_hash": "6d85344226be6cb376be114a123855efcd789a521cb465a1b295e43960ceaecf",
+      "role": "citizen",
+      "_id": "6a3010c623a1dda17f948831"
+    },
+    {
+      "username": "Goldy1",
+      "email": "vaswatimohanty49@gmail.com",
+      "password_hash": "6d85344226be6cb376be114a123855efcd789a521cb465a1b295e43960ceaecf",
+      "role": "citizen",
+      "_id": "6a3014d923a1dda17f948832"
+    }
+  ],
+  "reports": [
+    {
+      "_id": "report_001",
+      "reporter_name": "John Kamau",
+      "category": "Water Problem",
+      "description": "The main Lindi water kiosk pipeline has burst, causing massive leakage and flooding of muddy sewage water.",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.7891,
+          -1.3152
+        ]
+      },
+      "photo_url": "",
+      "voice_url": "",
+      "status": "pending",
+      "created_at": "2026-06-12T10:00:00Z"
+    },
+    {
+      "_id": "report_002",
+      "reporter_name": "Amina Omondi",
+      "category": "Drainage",
+      "description": "Lindi open drainage is completely clogged with garbage bags and plastic. Overflowing into nearby structures.",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.7872,
+          -1.3175
+        ]
+      },
+      "photo_url": "",
+      "voice_url": "",
+      "status": "investigating",
+      "created_at": "2026-06-11T14:30:00Z"
+    },
+    {
+      "_id": "report_003",
+      "reporter_name": "David Mwangi",
+      "category": "Street Lights",
+      "description": "Soweto solar high mast light has been off for a week. The area is pitch dark and security risk is high.",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.7842,
+          -1.3094
+        ]
+      },
+      "photo_url": "",
+      "voice_url": "",
+      "status": "resolved",
+      "created_at": "2026-06-10T20:15:00Z"
+    }
+  ],
+  "settlements": [
+    {
+      "_id": "kibera_001",
+      "name": "Kibera Settlement",
+      "district": "Nairobi County",
+      "population": 250000,
+      "area_sqkm": 2.5,
+      "center": [
+        36.7888,
+        -1.3133
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.775,
+              -1.318
+            ],
+            [
+              36.785,
+              -1.322
+            ],
+            [
+              36.802,
+              -1.314
+            ],
+            [
+              36.798,
+              -1.305
+            ],
+            [
+              36.782,
+              -1.308
+            ],
+            [
+              36.775,
+              -1.318
+            ]
+          ]
+        ]
+      },
+      "risk_indices": {
+        "flood": 85,
+        "water_scarcity": 72,
+        "population_growth": 90,
+        "infrastructure_gap": 78
+      }
+    },
+    {
+      "_id": "mathare_002",
+      "name": "Mathare Valley",
+      "district": "Nairobi County",
+      "population": 180000,
+      "area_sqkm": 1.8,
+      "center": [
+        36.8582,
+        -1.2588
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.85,
+              -1.265
+            ],
+            [
+              36.865,
+              -1.262
+            ],
+            [
+              36.87,
+              -1.252
+            ],
+            [
+              36.855,
+              -1.25
+            ],
+            [
+              36.85,
+              -1.265
+            ]
+          ]
+        ]
+      },
+      "risk_indices": {
+        "flood": 65,
+        "water_scarcity": 88,
+        "population_growth": 82,
+        "infrastructure_gap": 85
+      }
+    },
+    {
+      "_id": "mukuru_003",
+      "name": "Mukuru kwa Njenga",
+      "district": "Nairobi County",
+      "population": 120000,
+      "area_sqkm": 1.2,
+      "center": [
+        36.8851,
+        -1.3204
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.878,
+              -1.325
+            ],
+            [
+              36.892,
+              -1.322
+            ],
+            [
+              36.895,
+              -1.315
+            ],
+            [
+              36.882,
+              -1.313
+            ],
+            [
+              36.878,
+              -1.325
+            ]
+          ]
+        ]
+      },
+      "risk_indices": {
+        "flood": 75,
+        "water_scarcity": 60,
+        "population_growth": 95,
+        "infrastructure_gap": 70
+      }
+    }
+  ],
+  "infrastructure": [
+    {
+      "_id": "road_001",
+      "settlement_id": "kibera_001",
+      "type": "road",
+      "name": "Kibera Drive Link",
+      "status": "functional",
+      "coordinates": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            36.776,
+            -1.312
+          ],
+          [
+            36.782,
+            -1.313
+          ],
+          [
+            36.788,
+            -1.314
+          ],
+          [
+            36.795,
+            -1.312
+          ]
+        ]
+      }
+    },
+    {
+      "_id": "road_002",
+      "settlement_id": "kibera_001",
+      "type": "road",
+      "name": "Soweto East Alleyway",
+      "status": "damaged",
+      "coordinates": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            36.785,
+            -1.309
+          ],
+          [
+            36.786,
+            -1.315
+          ],
+          [
+            36.789,
+            -1.319
+          ]
+        ]
+      }
+    },
+    {
+      "_id": "water_001",
+      "settlement_id": "kibera_001",
+      "type": "water_point",
+      "name": "Soweto Water Kiosk",
+      "status": "functional",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.783,
+          -1.311
+        ]
+      }
+    },
+    {
+      "_id": "water_002",
+      "settlement_id": "kibera_001",
+      "type": "water_point",
+      "name": "Lindi Water Dispenser",
+      "status": "damaged",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.789,
+          -1.315
+        ]
+      }
+    },
+    {
+      "_id": "water_003",
+      "settlement_id": "kibera_001",
+      "type": "water_point",
+      "name": "Olympic Primary borehole",
+      "status": "functional",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.778,
+          -1.316
+        ]
+      }
+    },
+    {
+      "_id": "health_001",
+      "settlement_id": "kibera_001",
+      "type": "healthcare",
+      "name": "Kibera Community Clinic",
+      "status": "functional",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.782,
+          -1.315
+        ]
+      }
+    },
+    {
+      "_id": "health_002",
+      "settlement_id": "kibera_001",
+      "type": "healthcare",
+      "name": "MSF Health Center",
+      "status": "functional",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.794,
+          -1.31
+        ]
+      }
+    },
+    {
+      "_id": "school_001",
+      "settlement_id": "kibera_001",
+      "type": "school",
+      "name": "Olympic Primary School",
+      "status": "functional",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.777,
+          -1.315
+        ]
+      }
+    },
+    {
+      "_id": "school_002",
+      "settlement_id": "kibera_001",
+      "type": "school",
+      "name": "Soweto Hope Academy",
+      "status": "functional",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.787,
+          -1.313
+        ]
+      }
+    },
+    {
+      "_id": "drain_001",
+      "settlement_id": "kibera_001",
+      "type": "drainage",
+      "name": "Lindi Open Drain",
+      "status": "critical",
+      "coordinates": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            36.786,
+            -1.312
+          ],
+          [
+            36.787,
+            -1.316
+          ],
+          [
+            36.789,
+            -1.32
+          ]
+        ]
+      }
+    },
+    {
+      "_id": "light_001",
+      "settlement_id": "kibera_001",
+      "type": "street_light",
+      "name": "Solar Mast Soweto",
+      "status": "functional",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.784,
+          -1.309
+        ]
+      }
+    },
+    {
+      "_id": "light_002",
+      "settlement_id": "kibera_001",
+      "type": "street_light",
+      "name": "Lindi High Mast",
+      "status": "damaged",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.788,
+          -1.317
+        ]
+      }
+    }
+  ],
+  "predictions": [],
+  "recommendations": [
+    {
+      "_id": "rec_001",
+      "settlement_id": "kibera_001",
+      "facility_type": "water_tank",
+      "proposed_coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.792,
+          -1.317
+        ]
+      },
+      "confidence_score": 92.4,
+      "rationale": "High density zone. Nearest functional water point is over 450 meters away. This matches water shortage reports.",
+      "approved": false
+    },
+    {
+      "_id": "rec_002",
+      "settlement_id": "kibera_001",
+      "facility_type": "clinic",
+      "proposed_coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.78,
+          -1.319
+        ]
+      },
+      "confidence_score": 88.5,
+      "rationale": "Located at the western periphery. Population density is high but walk time to MSF clinic exceeds 20 minutes.",
+      "approved": false
+    },
+    {
+      "_id": "rec_003",
+      "settlement_id": "kibera_001",
+      "facility_type": "drainage_improvement",
+      "proposed_coordinates": {
+        "type": "Point",
+        "coordinates": [
+          36.787,
+          -1.318
+        ]
+      },
+      "confidence_score": 95.1,
+      "rationale": "Intersection of high slope runoff. Severe clogging history. Drainage improvement would mitigate downstream flood risk.",
+      "approved": true
+    }
+  ],
+  "analytics": []
+}
